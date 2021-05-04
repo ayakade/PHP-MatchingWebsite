@@ -1,0 +1,363 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #ebe7e3;
+	font-family: 'Inconsolata', monospace;
+	color: #414141;
+}
+
+h1 {
+	color: #cc7370;
+}
+
+.wrapper {
+	min-height: 100vh;
+}
+
+.content {
+	padding: 20px;
+}
+
+/* footer */
+
+.footer {
+	background-color: #e5d5cc;
+	padding: 15px 50px;
+	width: 100vw;
+	height: 60px;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer a {
+	font-size: 30px;
+	color: #fff;
+}
+
+.footer a.active {
+	color: #cc7370;
+}
+
+/* index & register */
+
+.cv-align-contents {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #ebe7e3;
+}
+
+.top-align-contents {
+	display: block;
+	background: #ebe7e3;
+}
+
+.card {
+	background: white;
+	padding: 50px 30px;
+	width: 80vw;
+}
+
+.profileCard .image {
+	width: 100%;
+	height: 450px;
+	background: #ccc;
+	background-image: url("../assets/_name.jpg");
+	background-position: center center;
+	background-size: cover;
+}
+
+#login .title, #register .title, #edit .title {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#login .title h1, #register .title h1, #edit .title h1 {
+	margin-bottom: 5px;
+}
+
+#register .title p, #edit .title p {
+	font-size: 14px;
+}
+
+.fieldgroup {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+label {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #414141;
+    font-size: 18px;
+}
+
+input[type="text"], input[type="password"] {
+	height: 30px;
+}
+
+textarea {
+	height: 100px;
+}
+
+.btn-primary {
+	background: #e5d5cc;
+	color: #cc7370;
+	height: 40px;
+	border-bottom:none;
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+.card a {
+	color: #cc7370;
+}
+
+/* success */
+
+#success h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.btn-secondary {
+	background: #e5d5cc;
+	color: #cc7370;
+	height: 40px;
+	border-bottom:none;
+	font-size: 16px;
+	font-weight: bolder;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-secondary a {
+	text-decoration: none;
+}
+
+/* me */
+
+#edit {
+	padding-bottom: 50px;
+}
+
+.card .editProfilePhoto {
+	margin-bottom: 30px;
+}
+
+.card .editProfilePhoto #thePhoto {
+	width: 200px;
+	height: 200px;
+	background-color: #e5d5cc;
+	border-radius: 100px;
+	overflow: auto;
+	margin: 0 auto;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+select {
+	height: 40px;
+	font-size: 18px;
+	/*width:100%;
+  	margin:0;
+	appearance: none;
+  	-webkit-appearance: none;
+  	outline: none;
+  	background:none;
+ 	border: 1px solid transparent;*/
+}
+
+#upload {
+	display: none;
+}
+
+/* animals list & details */
+
+.lists {
+	margin-top: 50px;
+	/*margin-bottom: 100px;*/
+	padding: 0 30px;
+}
+.profileCard {
+	background: white;
+	border-radius: 5px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.profileCard a.profileLink {
+	text-decoration: none;
+	color: #414141;
+}
+
+.profileCard .details {
+	padding:  20px 30px;
+}
+
+.profileCard .details h1 {
+	margin-bottom: 5px;
+}
+
+.profileCard .actions {
+	padding: 30px;
+}
+
+.profileCard .actions a.btn-primary  {
+	text-decoration: none;
+	padding: 10px 20px;
+}
+
+.profileCard .actions .btn-neg {
+	background: #414141;
+}
+
+.profileCard .actions a.btn-neg {
+	text-decoration: none;
+	padding: 10px 20px;
+	color: #fff;
+}
+
+/* animals */
+
+#animalList a {
+	text-decoration: none;
+}
+
+#animalList .details span {
+	color: #414141;
+}
+
+#matchmessage {
+	display: none;
+	background-color: #ebe7e3;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+	padding-top: 200px;
+}
+
+#matchmessage img {
+	width: 80vw;
+}
+
+.matchBtn {
+	position: relative;
+}
+
+.likeBtn {
+	color: #cc7370;
+	font-size: 40px;
+	background: #fff;
+	padding: 20px;
+	border-radius: 100px;
+	position: absolute;
+	left: 40px;
+}
+
+.noBtn {
+	color: #fff;
+	font-size: 40px;
+	background: #414141;
+	padding: 20px 28px;
+	border-radius: 100px;
+	position: absolute;
+	right: 40px;
+}
+
+/* matches */
+#matchList .title {
+	text-align: center;
+	margin-bottom: 30px;
+}
+#matchList .match a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding-left: 20px;
+	margin-bottom: 30px;
+}
+
+#matchList .match h2 {
+	font-size: 30px;
+	color: #414141;
+}
+
+.matchIcon {
+	height: 100px;
+	width: 100px;
+	background-position: center;
+	background-size: cover;
+	border-radius: 50px;
+	overflow: hidden;
+	margin-right: 50px;
+}
+
+/* chat */
+#messageList p {
+	text-align: center;
+}
+
+#messageList .title {
+	margin: 50px 0;
+	text-align: center;
+}
+
+#messageList .message {
+	background-color: white;
+	padding: 20px;
+	font-size: 20px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	width: 90%;
+	clear: both;
+}
+
+#messageList .fromMe {
+	background-color: #ccc;
+	float: right;
+}
+
+#messageForm {
+	display: flex;
+	position: fixed;
+	bottom: 60px;
+	height: 60px;
+	margin: 20px auto;
+}
+#messageForm textarea {
+	height: 50px;
+	border-radius: 10px;
+	overflow: hidden;
+	border: none;
+	margin-right: 5px;
+}
+
+#messageForm input[type="submit"] {
+	height: 50px;
+	color: white;
+	background-color: #cc7370;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: none;
+}
